@@ -5,7 +5,7 @@
 
 int main(){
 
-  char *string;
+  char string[10];
   while(strcmp("quit",string)!=0){
   scanf("%s",string);
  
