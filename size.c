@@ -23,6 +23,8 @@ int main(int argc, char *argv[]){
     printf("\n\nsize : %d\n\n", size);
   }
   
+  close(fd);
+
 
   return 0;
 }
