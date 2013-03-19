@@ -4,12 +4,19 @@
 #include <string.h>
 
 int main(){
-
-  char string[10];
-  while(strcmp("quit",string)!=0){
-  scanf("%s",string);
- 
-  system(string);
+  
+  
+  char string[80];
+  char *input = &string[0];
+  size_t size = 80;
+  while(true){
+    getline(&input,&size,stdin);
+    if(strcmp(string,"quit\n")==0){
+      exit(0);
+    }
+    else{
+      system(string);
+    }
   }
   return 0;
 }
